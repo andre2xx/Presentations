@@ -1,0 +1,16 @@
+#Exercice operateur
+#2
+a = int(input("Entre un ombre : "))
+b = int(input("Entre un nombre: "))
+print("a + b = ", a + b)
+print("a - b =", a - b)
+print("a * b =", a *b)
+print("a / b =", a / b)
+print("a // b = ", a // b)
+print("a % b = ", a % b) 
+print("a **b = ", a ** b) 
+print("a < b = ", a < b)
+print("a > b = ", a > b)
+print("a % b <= ", a <= b) 
+print("a >= b = ", a >= b) 
+print("a == b = ", a == b) 
