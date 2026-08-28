@@ -22,5 +22,5 @@ print("-"*10, "Transaction", "-" * 10)
 print(f"Dépot : {depot:>20.2f}")# >alligner a droite
 print(f"Retrait: {retrait:>20.2f}")# et colonne de largeur 20
 print("-"* 34)
-print(f"Solde : {solde:.2f}")
+print(f"Solde : {solde:>20.2f}")
 
