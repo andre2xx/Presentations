@@ -1,0 +1,15 @@
+Entrées: l'adresse IP, le masque de sous-réseau
+
+sorties: Nombre de bits pour le réseau, Nombre de bits pour les hôtes, Nombre total d'adresses, Nombre d'hôtes utilisables
+
+Pseudocode :
+fichier_1 = 100
+fichier_2 = 1024
+fichier_3 = 5 x 1024
+DEMANDER vitesse (en décimales)
+debit = vitesse / 8
+temps_1 = fichier_1 / debit
+temps_2 = fichier_2 / debit
+temps_3 = fichier_3 / debit
+AFFICHER debit
+AFFICHER temps_1, temps_2, temps_3
