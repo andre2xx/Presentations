@@ -18,7 +18,7 @@ Données fournies :
 """
 
 
-def calculer_temps_telechargement(taille_gb, vitesse_mbps):
+def calculer_temps_telechargement(taille_gb: float, vitesse_mbps: float) -> tuple:
     """
     Calcule le temps de téléchargement d'un fichier.
 
@@ -29,20 +29,26 @@ def calculer_temps_telechargement(taille_gb, vitesse_mbps):
     Retourne :
         tuple (float, float) : (temps en secondes, temps en minutes)
     """
-    # TODO :
     # 1. Convertir la taille du fichier en MB
+    taimme_mb = taille_gb * 1024
     # 2. Convertir la vitesse en MB/s
+    vitesse_mbs = vitesse_mbps / 8
     # 3. Calculer le temps en secondes
+    temps_seconde = taimme_mb / vitesse_mbs
     # 4. Convertir le temps en minutes
+    temps_min = temps_seconde / 60
     # 5. Retourner (temps_secondes, temps_minutes)
-    pass
+    return temps_seconde, temps_min
+
 
 
 def main():
-    # TODO :
+    #
     # 1. Appeler calculer_temps_telechargement() avec 4.7 GB et 50 Mbps
+    seconde, minutes = calculer_temps_telechargement(4.7, 50)
     # 2. Afficher le temps en secondes et en minutes
-    pass
+    print(f"temps de télécharhgement en seconde :  {minutes:.1f}\ntemps de téléchargement en temps minutes : {minutes:.2f}")
+
 
 
 if __name__ == "__main__":

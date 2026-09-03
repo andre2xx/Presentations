@@ -16,7 +16,7 @@ Données fournies :
 """
 
 
-def mbps_vers_mo_par_seconde(vitesse_mbps):
+def mbps_vers_mo_par_seconde(vitesse_mbps:float):
     """
     Convertit une vitesse exprimée en Mbps vers des MB/s.
 
@@ -26,8 +26,9 @@ def mbps_vers_mo_par_seconde(vitesse_mbps):
     Retourne :
         float : la vitesse équivalente en mégaoctets par seconde (MB/s)
     """
-    # TODO : à compléter
-    pass
+    vitesse_mbs = vitesse_mbps / 8
+    return vitesse_mbs
+
 
 
 def main():
@@ -40,7 +41,10 @@ def main():
     vitesse1_mbs = mbps_vers_mo_par_seconde(vitesse1_mbps)
     vitesse2_mbs = mbps_vers_mo_par_seconde(vitesse2_mbps)
     vitesse3_mbs = mbps_vers_mo_par_seconde(vitesse3_mbps)
-    print(f"{vitesse3_mbps}")
+    print(f"{vitesse1_mbps} Mvps = {vitesse1_mbs} MB/s")
+    print(f"{vitesse2_mbps} Mvps = {vitesse2_mbs} MB/s")
+    print(f"{vitesse3_mbps} Mvps = {vitesse3_mbs} MB/s")
+
 
 
 if __name__ == "__main__":

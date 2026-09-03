@@ -10,7 +10,7 @@ même dossier que ce fichier de tests, puis exécutez :
 
 import pytest
 
-from s1_1_ex2 import mbps_vers_mo_par_seconde
+from s1_1_ex2_template import mbps_vers_mo_par_seconde
 
 
 def test_100_mbps():

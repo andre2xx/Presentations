@@ -10,7 +10,7 @@ même dossier que ce fichier de tests, puis exécutez :
 
 import pytest
 
-from s1_1_ex3 import calculer_temps_telechargement
+from s1_1_ex3_template import calculer_temps_telechargement
 
 
 def test_retourne_un_tuple_de_deux_valeurs():
