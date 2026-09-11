@@ -8,7 +8,7 @@ même dossier que ce fichier de tests, puis exécutez :
     pytest s1_1_ex5_tests.py
 """
 
-from s1_1_ex5 import calculer_nombre_hotes
+from s1_1_ex5_template import calculer_nombre_hotes
 
 
 def test_slash_24():

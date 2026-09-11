@@ -33,15 +33,25 @@ def calculer_nombre_hotes(cidr):
               broadcast exclues)
     """
     # TODO : à compléter
-    pass
+    sous_reseau= 2 ** (32 - cidr) - 2
+    return int(sous_reseau)
+
+
 
 
 def main():
     # TODO :
     # 1. Appeler calculer_nombre_hotes() pour /24, /25, /26 et /30
-    # 2. Afficher les résultats
-    pass
+    sous_reseau_1 = calculer_nombre_hotes(24)
+    sous_reseau_2 = calculer_nombre_hotes(25)
+    sous_reseau_3 = calculer_nombre_hotes(26)
+    sous_reseau_4 = calculer_nombre_hotes(30)
 
+    # 2. Afficher les résultats
+    print("Le nombre d'hotes disponible pour un réseau de /24 est : ", sous_reseau_1)
+    print("Le nombre d'hotes disponible pour un réseau de /25 est : ", sous_reseau_2)
+    print("Le nombre d'hotes disponible pour un réseau de /26 est : ", sous_reseau_3)
+    print("Le nombre d'hotes disponible pour un réseau de /30 est : ", sous_reseau_4)
 
 if __name__ == "__main__":
     main()

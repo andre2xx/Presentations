@@ -30,11 +30,11 @@ def calculer_temps_telechargement(taille_gb: float, vitesse_mbps: float) -> tupl
         tuple (float, float) : (temps en secondes, temps en minutes)
     """
     # 1. Convertir la taille du fichier en MB
-    taimme_mb = taille_gb * 1024
+    taille_mb = taille_gb * 1024
     # 2. Convertir la vitesse en MB/s
     vitesse_mbs = vitesse_mbps / 8
     # 3. Calculer le temps en secondes
-    temps_seconde = taimme_mb / vitesse_mbs
+    temps_seconde = taille_mb / vitesse_mbs
     # 4. Convertir le temps en minutes
     temps_min = temps_seconde / 60
     # 5. Retourner (temps_secondes, temps_minutes)

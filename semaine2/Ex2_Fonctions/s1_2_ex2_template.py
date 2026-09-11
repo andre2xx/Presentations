@@ -35,18 +35,28 @@ def convertir_taille_fichier(taille_bytes):
     """
     # TODO :
     # 1. Convertir bytes -> KB
+    ko = taille_bytes / 1024
     # 2. Convertir bytes -> MB
+    mo = taille_bytes / (1024 * 1024)
     # 3. Convertir bytes -> GB
+    go = taille_bytes / (1024 * 1024 *1024)
     # 4. Retourner (ko, mo, go)
-    pass
+    return ko, mo, go
 
 
 def main():
     # TODO :
     # 1. Appeler convertir_taille_fichier() pour 2048, 5242880 et
     #    1073741824 bytes
+    ko, mo, go = convertir_taille_fichier(2048)
+    ko2, mo2, go2 = convertir_taille_fichier(5242880)
+    ko3, mo3, go3 = convertir_taille_fichier(1073741824)
     # 2. Afficher chaque résultat avec 2 décimales (ex.: f"{valeur:.2f}")
-    pass
+    print(f"{2048} bytes en ko, mo et go : {ko:.2f} kb = {mo:.2f} mo = {go:.2f} go")
+    print(f"{5242880} bytes en ko, mo et go : {ko2:.2f} kb = {mo2:.2f} mo = {go2:.2f} go")
+    print(f"{1073741824} bytes en ko, mo et go : {ko3:.2f} kb = {mo3:.2f} mo = {go3:.2f} go")
+
+
 
 
 if __name__ == "__main__":

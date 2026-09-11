@@ -41,9 +41,9 @@ def main():
     vitesse1_mbs = mbps_vers_mo_par_seconde(vitesse1_mbps)
     vitesse2_mbs = mbps_vers_mo_par_seconde(vitesse2_mbps)
     vitesse3_mbs = mbps_vers_mo_par_seconde(vitesse3_mbps)
-    print(f"{vitesse1_mbps} Mvps = {vitesse1_mbs} MB/s")
-    print(f"{vitesse2_mbps} Mvps = {vitesse2_mbs} MB/s")
-    print(f"{vitesse3_mbps} Mvps = {vitesse3_mbs} MB/s")
+    print(f"{vitesse1_mbps} Mbps = {vitesse1_mbs} MB/s")
+    print(f"{vitesse2_mbps} Mbps = {vitesse2_mbs} MB/s")
+    print(f"{vitesse3_mbps} Mbps = {vitesse3_mbs} MB/s")
 
 
 
