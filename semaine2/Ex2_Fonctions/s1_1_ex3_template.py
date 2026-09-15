@@ -47,7 +47,7 @@ def main():
     # 1. Appeler calculer_temps_telechargement() avec 4.7 GB et 50 Mbps
     seconde, minutes = calculer_temps_telechargement(4.7, 50)
     # 2. Afficher le temps en secondes et en minutes
-    print(f"temps de télécharhgement en seconde :  {minutes:.1f}\ntemps de téléchargement en temps minutes : {minutes:.2f}")
+    print(f"temps de télécharhgement en seconde :  {seconde:.2f}\ntemps de téléchargement en temps minutes : {minutes:.2f}")
 
 
 

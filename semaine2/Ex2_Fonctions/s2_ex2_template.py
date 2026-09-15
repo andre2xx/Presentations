@@ -27,7 +27,7 @@ Données fournies :
 """
 
 
-def calculer_debit(vitesse_mbps):
+def calculer_debit(vitesse_mbps: float)-> float:
     """
     Calcule le débit théorique en MB/s à partir d'une vitesse en Mbps.
 
@@ -37,8 +37,9 @@ def calculer_debit(vitesse_mbps):
     Retourne :
         float : le débit théorique en MB/s
     """
-    # TODO : à compléter
-    pass
+    #
+    debit_mbs = vitesse_mbps / 8
+    return debit_mbs
 
 
 def calculer_temps_telechargement(taille_mb, debit_mo_par_seconde):
@@ -53,16 +54,26 @@ def calculer_temps_telechargement(taille_mb, debit_mo_par_seconde):
         tuple (float, float) : (temps en secondes, temps en minutes)
     """
     # TODO : à compléter
-    pass
+    temps_telechargement_sec = taille_mb / debit_mo_par_seconde
+    temps_telechargement_min = temps_telechargement_sec / 60
+    return temps_telechargement_sec, temps_telechargement_min
+
 
 
 def main():
     # TODO :
     # 1. Calculer le débit avec calculer_debit() pour 100 Mbps
+    debit = calculer_debit(100)
     # 2. Pour chaque taille de fichier (100 MB, 1 GB = 1024 MB,
     #    5 GB = 5120 MB), calculer et afficher le temps de
     #    téléchargement en secondes et en minutes
-    pass
+    seconde_100, minutes_100 = calculer_temps_telechargement(100, debit)
+    print(f"100 mb -> {seconde_100:.2f} sec ({minutes_100:.2f} min)")
+    seconde_1go, minutes_1go = calculer_temps_telechargement(1024, debit)
+    print(f"1 GB -> {seconde_1go:.2f} sec ({minutes_1go:.2f} min)")
+    seconde_5go, minutes_5go = calculer_temps_telechargement(5120, debit)
+    print(f"5 GB mb -> {seconde_5go:.2f} sec ({minutes_5go:.2f} min)")
+
 
 
 if __name__ == "__main__":
