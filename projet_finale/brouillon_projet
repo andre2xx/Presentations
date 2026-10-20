@@ -1,9 +1,11 @@
 idée de projet: Réservation de siège pour une salle de cinéma
 
-listes possible: rangé ou se trouvent les siège, sièges dans les rangés.
+listes possible: rangé ou se trouvent les siège, sièges dans les rangés indique aussi si siège est occpué ou non, films disponibles.
 
-dictionnaire possible: tarifs des siège (étudiants, enfants(moins de 12ans), régulier, salle V.I.P).
+dictionnaire possible: tarifs des siège (étudiants, enfants(moins de 12ans), régulier, salle V.I.P), horaires de films, salles, réservation des clients.
 
-Entrés: nom du clients, Nom du film, salle V.I.P ou non, age du clients, nombre de billet de chaque tarif.
+Entrés: nom du clients, Nom du film, salle V.I.P ou non, age du clients, nombre de billet de chaque tarif, l'heure de présentation, siège choisi
 
 sorties: confirmation de réservation, heure du film, numéro de salle, prix totale de la réservation, nombre de billet acheté.
+
+Taifs: enfants(3-13ans) = 9$, adultes(14 et plus) = 15$, étudiants = 12$
