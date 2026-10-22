@@ -1,0 +1,27 @@
+GESTIONNAIRE DE RÉSERVATION DE SIEGE DE CINÉMA
+
+
+Menu principale
+
+1- liste film -> affiche les films qui sont projeté
+->   Avanger doomsday, scream 6, spiderman brand new day, toys story 5
+
+
+2- reserver billet -> créer une réservation
+-nom client
+-type de billet: enfants(3-12ans) 9$, adulte(13 et plus) 15$, etudiants 12$, v.i.p(18 ans et plus) 18$
+-salle v.i.p: avec repas +7$ à la facture.
+-liste_sige
+-résumer de la réservation
+-option pour modifier la réservation
+-création de facture
+
+3- horaire des films -> montre l'horaire des films
+-liste des film
+-dict_heure_film
+
+
+4- les tarifs -> affiche les tarifs des billet
+-affiche les tarifs:
+    -enfants(3-12ans) 9$, adulte(13 et plus) 15$, etudiants 12$, v.i.p(18 ans et plus) 18$
+    -salle v.i.p: avec repas +7$ à la facture.

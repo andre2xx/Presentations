@@ -9,3 +9,23 @@ Entrés: nom du clients, Nom du film, salle V.I.P ou non, age du clients, nombre
 sorties: confirmation de réservation, heure du film, numéro de salle, prix totale de la réservation, nombre de billet acheté.
 
 Taifs: enfants(3-13ans) = 9$, adultes(14 et plus) = 15$, étudiants = 12$
+
+
+
+
+
+
+
+Menu principale
+1- liste film
+2- reserver billet
+3- horaire des films
+4- les tarifs
+5- quitter
+
+créer une réservation
+
+
+demander le nom du film
+demander v.i.p ou non
+demander le nombre de billet
