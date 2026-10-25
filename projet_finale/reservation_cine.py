@@ -1,8 +1,10 @@
 #######################################################################################
-#Entrées : nom_client, age_client, nom_film, nombre_billet, heure_film, siege_choisi, option_vip, vip_nourriture
+#Entrées : nom_client, type_billet, nb_billet, heure_film, siege_choisi, vip_nourriture
 #sorties : confirmation_reservation, heure_film, numero_salle, prix_totale, billet_achete,facture,
 #menu_principale, liste_films, liste_siege
-#######################################################################################
+################################################################################################
+#valeurs constante: liste_film horaire_films, tarifs, taux_taxes = 1.14975
+################################################################################################
 #AFFICHER menu_principale():
 # 1- liste film
 # 2- reserver billet
@@ -25,26 +27,34 @@
 #reserver_billets():
 #DEMANDER nom_client
 #DEMANDER nom_film
+#DEMANDER heure_film
+#DEAMNDER type_billet
 #DEMANDER nombre_billet
-#
-#POUR CHAQUE billet dans nombre_billet:
-#   DEMANDER age_client
-#       SI 3 < age <= 13:
-#           tarif = enfants(12$)
-#       SI age >= 14:
-#           tarif = adulte(15$)
-#       Si age == "etudiant":
-#           tarif = etudiant(12)"
+
+#siege_choisis = choisir siege(liste_siege, nb_billet)
+#Calculer le prix de la réservation
+#afficher "réservation effectué."
+#creer_facture()
 #############################################################################################
-#choisir_siege():
-#While True
-#   Afficher liste_siege
-#   DEMANDER choisir un siege dans liste_siege
-#   AJOUTER selection à siege_chosi
-#   DEMANDER ajouter d'autre billet?
-#       SI reponse == "non"
-#           break
-#       Sinon si reponse == "oui"
-#           continue
-#retourner siege_chosi
+#creer_facture(type_billet, nb_billet, vip_nourriture, nom_client, nom_fil, siege_chosi)
+#prix_billet = tarifs[type_billet]
+#sous_total = prix unitaire * nb_billet
+#SI vip_nourriture == vrai
+#   #prix_sous_total = prix_sous_total + (prix_nourriture * nb_billet)
+#prix_total = prix_sous_total * taux_taxes
+#AFFICHER interface de facture -> nom du client, film, heure, nombre de billet, sieges, prix_total
+#retourner prix total
+#############################################################################################
+#choisir_siege(liste_siege, nb_billet):
+#liste_siege_choisi = []
+#pour chaque siege dans Liste_siege
+#   AFFICHER siege_disponibles
+#
+#for i in range nb_billet
+#   Afficher "choisir une siege"
+#       siege_choisi =
+#   while siege_choisi == "occupeé"
+#       AFFICHER "siège occupé. Veuillez en choisir un autre"
+#       Ajouter liste_siege_choisi
+#   retourner liste_siege_chosi
 ###############################################################################################
