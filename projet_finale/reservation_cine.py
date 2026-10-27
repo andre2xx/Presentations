@@ -3,7 +3,10 @@
 #sorties : confirmation_reservation, heure_film, numero_salle, prix_totale, billet_achete,facture,
 #menu_principale, liste_films, liste_siege
 ################################################################################################
-#valeurs constante: liste_film horaire_films, tarifs, taux_taxes = 1.14975
+#valeurs constante: liste_film, horaire_films, tarifs, taux_taxes = 1.14975
+###############################################################################################
+#FONCTIONS: menu_principale(), afficher_film(), reserver_billets, modifier_resevration, creer_facture,
+# afficher_horaire, afficher_tarifs, creer_confirmation, choisir_siege,
 ################################################################################################
 #AFFICHER menu_principale():
 # 1- liste film
@@ -35,6 +38,14 @@
 #Calculer le prix de la réservation
 #afficher "réservation effectué."
 #creer_facture()
+#############################################################################################
+# afficher_horaire():
+# AFFICHER horaire_film
+#"0" pour retourner au menu principale
+#############################################################################################
+#Afficher_tarifs():
+#AFFICHER tarifs
+#"0" pour retourner au menu principale.
 #############################################################################################
 #creer_facture(type_billet, nb_billet, vip_nourriture, nom_client, nom_fil, siege_chosi)
 #prix_billet = tarifs[type_billet]
