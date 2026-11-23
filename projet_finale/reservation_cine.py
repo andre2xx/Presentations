@@ -22,6 +22,12 @@
 #   afficher l'horaires des films
 #SI choix == 4:
 #   afficher tarifs():
+#SI choix == 5:
+#   AFFICHER "Merci et à bientôt !"
+#   ARRETER le programme
+#SINON:
+#   AFFICHER "Choix invalide"
+#   REAFFICHER le menu
 #############################################################################################
 #afficher_filmS():
 #AFFICHER liste_film
@@ -34,7 +40,63 @@
 #DEAMNDER type_billet
 #DEMANDER nombre_billet
 
+#SI nom_client == vide:
+#   AFFICHER "Le nom ne peut pas être vide"
+#   REDemander le nom
+
+#SI nom_client contient des chiffres:
+#   AFFICHER "Le nom ne doit pas contenir de chiffres"
+#   REDemander le nom
+
+#VERIFIER si des places sont disponibles
+#SI aucune place n'est disponible:
+#   AFFICHER "Cette séance est complète"
+#   RETOURNER au menu
+
+#DEMANDER l'âge de chaque personne
+#VERIFIER si l'âge correspond au type de billet
+#SI l'âge n'est pas valide:
+#   AFFICHER un message d'erreur
+#   REDEMANDER l'âge
+
+#SI type_billet == "vip":
+#   DEMANDER si le client veut ajouter un repas
+#   SI oui:
+#       AJOUTER le prix du repas
+
 #siege_choisis = choisir siege(liste_siege, nb_billet)
+#VERIFIER si le siège existe
+#SI le siège n'existe pas:
+#   AFFICHER "Ce siège n'existe pas"
+
+#SI le siège est déjà occupé:
+#   AFFICHER "Siège occupé"
+#   DEMANDER un autre siège
+
+#SI le siège a déjà été choisi:
+#   AFFICHER "Vous avez déjà choisi ce siège"
+
+#SI le client entre 0:
+#   ANNULER le choix des sièges
+#   RETOURNER au menu
+
+#AFFICHER le résumé de la réservation
+
+#DEMANDER au client ce qu'il veut faire
+
+#SI choix == 1:
+#   CONFIRMER la réservation
+#   ENREGISTRER les sièges occupés
+#   CREER un numéro de réservation
+#   CREER la facture
+
+#SI choix == 2:
+#   APPELER modifier_reservation()
+
+#SI choix == 3:
+#   ANNULER la réservation
+#   AFFICHER "Réservation annulée"
+
 #Calculer le prix de la réservation
 #afficher "réservation effectué."
 #creer_facture()
